@@ -1,0 +1,8 @@
+val df = spark.read.option("header",true).csv("C://Users/Ritu/Downloads/dept.csv") --Create a datarame from a csv file
+df.show()                                                                               --show all content of the dataframe
+df.select("ProgramName","SponsorName","ProgramState").show(2)                           --select perticular colums and top two rows from dataframe
+
+
+
+val df = spark.read.option("multiLine", true).option("mode", "PERMISSIVE").json("C://Users/Ritu/Downloads/data.json")
+val df = spark.read.option("multiLine", true).json(("C://Users/Ritu/Downloads/data.json")
