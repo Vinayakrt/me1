@@ -1,0 +1,8 @@
+SELECT count(*)
+FROM p1
+inner  JOIN p2 ON p1.id=p2.id;
+
+create table p2 (id int);
+
+INSERT INTO a2
+VALUES (1);
